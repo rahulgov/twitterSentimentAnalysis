@@ -17,7 +17,7 @@ export default class DatafromSql extends Component {
     }
  
     componentDidMount(){
-         axios.get('http://35.236.58.220:3001/mysql')
+         axios.get('http://localhost:3001/mysql')
          .then(res => {
              const sqlData = res.data;
              this.setState({ sqlData });
@@ -64,7 +64,7 @@ export default class DatafromSql extends Component {
       }
   
     
-      axios.post(`http://35.236.58.220:3001/file`, formData, config )
+      axios.post(`http://localhost:3001/file`, formData, config )
       .then((response) => {
         console.log(response);
     }).catch((error) => {

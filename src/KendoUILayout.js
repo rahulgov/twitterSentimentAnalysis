@@ -71,7 +71,7 @@ export default class App extends React.Component {
         // const {keyword} = this.state;
         // console.log(this.state.keyword);
   
-          axios.post(`http://35.236.58.220:3001/argsPython`, {question}  )
+          axios.post(`http://localhost:3001/argsPython`, {question}  )
         .then(res => {
           console.log(res);
           console.log(res.data);
